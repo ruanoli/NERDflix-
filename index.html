@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NERDFLIX</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!--Owl css-->
+        <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <h2 id="logo" class="logo">NERDFLIX</h2>
+            <nav>
+
+                <!--Mobile-->
+                <a href="#"><i class="fas fa-home"></i></a>
+                <a href="#carrosel"><i class="fas fa-desktop"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-plus"></i></a>
+
+                <!--Desktop-->
+                <a class="nav-bar" href="#">Início</a>
+                <a class="nav-bar" href="#carrosel">Séries</a>
+                <a class="nav-bar" href="#carrosel">Filmes</a>
+                <a class="nav-bar" href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">
+                    Brooklyn nine nine
+                </h3>
+                <p class="descricao ">
+                    O brilhante e imaturo detetive Jake Peralta precisa 
+                    aprender a seguir as regras e trabalhar em equipe quando
+                    um capitão exigente assume o comando de seu esquadrão.
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                       <a href="assets/video/nineninetrailer.mp4">
+                            ASSISTIR TRAILER
+                        </a>
+                    </button>
+                    <button role="button" onmouseover="mouseOn()" onmouseout="mouseN()" id="botao" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div> 
+        </div>
+    </main>
+
+    <div id="carrosel" class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="assets/images/bigbang.jpg" alt="Imagem da série The Big Bang theory"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/doish.jpg" alt="Imagem da série Two and Half man"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/flash.jpg" alt="Imagem da série Flash"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/game.jpg" alt="Imagem da série Game of thrones"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/kong.jpg" alt="Imagem do filme Gozilla vs King kong"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/liga.jpg" alt="Imagem do filme Liga da justiça"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/loki,jpg.jpg" alt="Imagem da série Loki"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/mortal.jpg" alt="Imagem do filme Mortal Kombat"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/pink.jpg" alt="Imagem da série Peaky Blinders"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/r6.jpg" alt="Imagem do filme Sem remorso"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/rick.jpg" alt="Imagem da série Rick and Morty"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/simp.jpg" alt="Imagem da série The Simpsons"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/teen.jpg" alt="Imagem da série Teen Titans"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/toy.jpg" alt="Imagem do filme Toy Story"/>
+            </div>
+            <div class="item">
+                <img src="assets/images/twd.jpg" alt="Imagem da série The walking dead"/>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/owl/jquery.min.js"></script>
+    <script src="assets/js/owl/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/16304e006d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

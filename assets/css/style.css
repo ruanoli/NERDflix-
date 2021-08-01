@@ -1,0 +1,189 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+    --branco: #fff;
+    --cinza: #aaa;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Filme principal*/
+
+body{
+    background:var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--preto);
+    width: 100vw;
+    margin:auto;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+    transition: .3s ease all;
+}
+
+header nav{
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: var(--branco);
+    border-bottom: 2px solid var(--vermelho);
+}
+
+nav .fas{
+    display: none;
+}
+
+/*Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/assets/images/nine.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 569px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.titulo {
+    margin-top: 10%;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.filme-principal .descricao {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.botao {
+    padding: 15px;
+    background-color: rgba(0,0,0, .80);
+    border: none;
+    color: var(--branco);
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .5s ease all;
+}
+
+.botao a{
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: var(--vermelho);
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.container {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+    cursor: pointer;
+}
+/*Resposividade*/
+@media screen and (min-width:200px) and (max-width:460px){
+    header .container{
+        flex-direction: column;
+        position: fixed;
+    }
+
+    header nav {
+        margin-left: 40px;
+    } 
+} 
+@media screen and (max-width:700px){
+    header .container{
+        position: fixed;
+        justify-content: space-between;
+        background-color: rgba(0,0,0, .90);
+        width: 100%;
+        margin:auto;
+    }
+
+    header .logo {
+        font-size: 30px;
+    }
+    header nav {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    nav .nav-bar {
+        display: none;
+    }
+
+    nav .fas {
+        display: inline-block;
+        padding: 5px 10px;
+        margin-top:5px;
+    }
+
+    nav .fas:hover{
+        background-color: var(--cinza);
+
+    }
+    
+    .filme-principal .titulo{
+        font-size: 30px;
+    }
+
+    .botao {
+        width: 190px;
+        height: 50px;
+        margin-bottom: 10px ;
+
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .filme-principal .container{
+        width: 50%;
+    }
+}
