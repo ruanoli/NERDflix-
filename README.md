@@ -1,2 +1,3 @@
-# nerdflix-clone-netflix
+# Nerdflix
 Projeto de clone da interface da Netflix.
+
